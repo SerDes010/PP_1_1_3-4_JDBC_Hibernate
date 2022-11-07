@@ -11,7 +11,6 @@ public class UserServiceImpl implements UserService {
     UserDao dao = new UserDaoHibernateImpl();
     public UserServiceImpl(){
     }
-
     public void createUsersTable() throws SQLException {
     dao.createUsersTable();
     }
@@ -34,5 +33,4 @@ public class UserServiceImpl implements UserService {
     public void cleanUsersTable() throws SQLException {
         this.dao.cleanUsersTable();
     }
-
 }
